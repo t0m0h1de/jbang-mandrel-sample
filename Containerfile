@@ -14,4 +14,6 @@ RUN curl -Ls "https://github.com/jbangdev/jbang/releases/download/v${jbang_versi
     chmod +x jbang-${jbang_version}/bin/jbang && \
     mv jbang-${jbang_version}/bin/* /usr/local/bin/
 
+WORKDIR /project
+
 ENTRYPOINT ["jbang"]
